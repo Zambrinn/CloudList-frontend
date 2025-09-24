@@ -85,11 +85,6 @@ export function TodoListPage() {
     setEditingTodoId(todo.id);
     setEditingTodoText(todo.description);
   }
-
-  function handleCancelEdit() {
-    setEditingTodoId(null);
-    setEditingTodoText('');
-  }
   
   async function handleSaveEdit(id: string) {
     if (!editingTodoText.trim()) return;

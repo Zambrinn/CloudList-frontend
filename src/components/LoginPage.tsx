@@ -2,7 +2,6 @@ import { useState, type FormEvent, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../contexts/AuthContext';
 import toast from 'react-hot-toast';
-import api from '../services/api';
 
 export function LoginPage() {
   const navigate = useNavigate();
